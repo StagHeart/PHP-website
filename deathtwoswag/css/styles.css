@@ -1,0 +1,432 @@
+/***
+	Color Pallete
+	=============
+	Dark Bg Grey:			#222
+	Light Bg Grey:		#333
+	Border Grey:			#666
+	Blue Accent:			#0B99BC
+	Orange Accent:		#E15119
+***/
+
+/***
+	Table of Contents
+	=================
+	)) CSS Reset
+	)) General Rules
+	)) Custom Classes
+	)) Header
+	)) Main Area
+	)) Footer
+	)) Media Queries
+***/
+
+
+
+/***
+	CSS Reset
+***/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+	box-sizing: inherit;
+}
+
+address {
+	color: inherit;
+	display: inline;
+	font-style: inherit;
+}
+
+
+
+/***
+	General Rules
+***/
+* {
+	color: #FFF;
+}
+
+a {
+	color: #E15119;
+	text-decoration: none;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+h1, 
+h2, 
+h3, 
+h4 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 13px;
+}
+h6 {
+	font-size: 11px;
+}
+
+p {
+	color: #EEE;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+input,
+textarea,
+button {
+	color: #111;
+}
+
+body {
+	background-color: #222;
+	font-family: 'Arial';
+}
+
+
+
+/***
+	Custom Classes
+***/
+.accent_button {
+	background-color: #CCC;
+	border: 2px solid #AAA;
+	border-radius: 2px;
+	color: #333;
+	display: block;
+	font-size: 16px;
+	padding: 6px 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+	.accent_button:hover {
+		border: 2px solid #0B99BC;
+		color: #0B99BC;
+		text-decoration: none;
+	}
+	
+.sidebar {
+	border-top: 3px solid #0B99BC;
+	clear: right;
+	float: right;
+	font-size: 14px;
+	padding: 10px 20px;
+	margin-top: 20px;
+	text-align: left;
+	width: 300px;
+}
+
+	.sidebar h1 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.sidebar h2 {
+		font-size: 18px;
+	}
+	.sidebar h3 {
+		font-size: 16px;
+	}
+
+	.sidebar a {
+		display: block;
+		margin-bottom: 4px;
+		margin-top: 4px;
+	}
+
+		.sidebar a:hover {
+			text-decoration: underline;
+		}
+
+
+
+/***
+	Header Configuration
+***/
+header {
+	background-color: #333;
+	border-bottom: 1px solid #666;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+
+	header .inner {
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	header .logo {
+		color: #0B99BC;
+		display: block;
+		float: left;
+		font-weight: bold;
+		line-height: 55px;
+		text-align: center;
+		width: 150px;
+	}
+	
+	header #mobile_button{
+		display: none;
+	}
+
+	header nav {
+		display: block;
+		overflow: hidden;
+	}
+	
+	header #general_links {
+		float: left;
+		line-height: 55px;
+	}
+
+		header #general_links a {
+			border-bottom: 2px solid rgba(0, 0, 0, 0);
+			color: #FFF;
+			display: inline;
+			font-size: 16px;
+			margin: 0 8px;
+			text-transform: uppercase;
+		}
+
+			header #general_links a:hover {
+				text-decoration: none;
+				text-shadow: 0 0 2px #FFF;
+			}
+
+			header #general_links a.active {
+				border-bottom: 2px solid #0B99BC;
+			}
+			
+	header #profile_links {
+		float: right;
+		line-height: 55px;
+	}
+
+		header #profile_links a {
+			display: inline-block;
+			line-height: 20px;
+			margin: 0 10px;
+			width: 100px;
+		}
+
+
+
+/***
+	Mobile Menu
+***/	
+#mobile_menu {
+	background-color: #333;
+	clear: both;
+	display: none;
+}
+			
+	#mobile_menu ul {
+		list-style-type: none;
+	}
+	
+	#mobile_menu li {
+		display: block;
+		text-align: left;
+	}
+
+	#mobile_menu a {
+		background-color: #333;
+		border-top: 1px solid #444;
+		color: #FFF;
+		display: block;
+		font-size: 14px;
+		padding: 10px 0 10px 30px;
+	}
+
+		#mobile_menu a:hover {
+			background-color: #7AF;
+			text-decoration: none;
+		}
+
+
+
+/***
+	Main Area Configuration
+***/
+main {
+	clear: both;
+	padding: 15px 0 30px 0;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 80%;
+}
+
+
+
+/***
+	Footer Configuration
+***/
+footer {
+	background-color: #333;
+	border-top: 1px solid #666;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+	footer .inner {
+		margin: 0 auto;
+		overflow: hidden;
+		width: 80%;
+		z-index: 0;
+	}
+
+	footer nav {
+		display: block;
+		float: left;
+		margin: 15px 30px 0 10px;
+		width: 200px;
+	}
+
+	footer h1 {
+		border-bottom: 1px solid #AAA;
+		color: #AAA;
+		font-size: 12px;
+		font-weight: bold;
+		margin-bottom: 3px;
+	}
+
+	footer a {
+		color: #888;
+		display: block;
+		font-size: 12px;
+	}
+
+		footer a:hover {
+			color: #CCC;
+		}
+
+	footer #copyright {
+		clear: both;
+		color: #AAA;
+		display: block;
+		font-size: 12px;
+		padding: 20px 0 10px 10px;
+	}
+	
+	
+	
+/***
+	Media Queries
+***/
+/* Drop the sidebars to the bottom */
+@media screen and (max-width: 1250px) {
+	.sidebar {
+		clear: both;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%; 
+	}
+}
+
+/* Center logo on it's own top line */
+@media screen and (max-width: 1050px) {
+	header .logo {
+		display: block;
+		float: none;
+		line-height: 30px;
+		width: auto;
+	}
+}
+
+/* Just about tablet view */
+@media screen and (max-width: 850px) {
+	header nav {
+		display: block;
+	}
+	
+	header #general_links {
+		float: none;
+		line-height: 30px;
+		text-align: center;
+	}
+	
+	header #profile_links {
+		float: none;
+		text-align: center;
+	}
+}
+
+/* Introduce the mobile view/menu button */
+@media screen and (max-width: 565px) {
+	header {
+		padding-top: 10px;
+	}
+	
+	header .logo::after {
+		content: '';
+		display: block;
+		height: 10px;
+	}
+
+	header #general_links {
+		display: none;
+	}
+	
+	header #profile_links {
+		display: none;
+	}
+	
+	header .logo {
+		line-height: 40px;
+		padding-left: 40px; /* Offset to counter the menu button */
+	}
+	
+	header #mobile_button {
+		display: block;
+		float: right;
+	}
+	
+	header .inner {
+		line-height: 40px;
+	}
+	
+	main {
+		width: 100%;
+	}
+	
+	p {
+		font-size: 12px;
+	}
+}
+
+/* Slide logo to the left */
+@media screen and (max-width: 430px) {
+	header .logo {
+		float: left;
+		padding-left: 5px; /* Remove the hack to center the logo */
+	}
+}

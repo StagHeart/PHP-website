@@ -1,0 +1,90 @@
+/***
+	Table of Contents
+	=================
+	)) Form
+	)) Media Queries
+***/
+
+
+
+main .outer {
+	float: left;
+	width: 650px;
+}
+
+	main .outer > h1 {
+		margin-bottom: 20px;
+	}
+	
+main .inner {
+	background-color: #333;
+	border: 1px solid #666;
+	padding: 10px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input,
+textarea {
+	padding: 2px;
+	margin-bottom: 20px;
+}
+
+input {
+	display: block;
+	width: 100%;
+}
+
+	input:last-of-type {
+		margin-bottom: 0;
+		width: auto;
+	}
+
+textarea {
+	display: block;
+	min-height: 150px;
+	resize: vertical;
+	width: 100%;
+}
+
+
+/* When the sidebars drop */
+@media screen and (max-width: 1250px) {
+	main .outer {
+		float: none;
+		margin: 0 auto;
+		width: 750px;
+	}
+}
+
+/* When the nav shrinks a bit */
+@media screen and (max-width: 1050px) {
+	main .outer {
+		width: 650px;
+	}
+}
+		
+/* Start tablet view */
+@media screen and (max-width: 850px) {
+	main .outer {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* Start mobile view */
+@media screen and (max-width: 565px) {
+	main .outer > h1 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	main .inner {
+		border-left: none;
+		border-right: none;
+	}
+}
+

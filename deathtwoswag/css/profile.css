@@ -1,0 +1,120 @@
+/***
+	Title of Contents
+	=================
+	)) Profile
+	)) Sidebar
+	)) Media Queries
+***/
+
+
+
+#profile {
+	background-color: #333;
+	border: 1px solid #666;
+	float: left;
+	margin-top: 20px;
+	overflow: hidden;
+	padding: 10px;
+	width: 650px;
+}
+
+	#profile .mgmt {
+		float: left;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+
+	#profile h1 {
+		clear: both;
+		margin-bottom: 20px;
+	}
+
+	#profile img {
+		border: 1px solid #666;
+		float: left;
+		height: auto;
+		margin-right: 10px;
+		width: 242px;
+	}
+	
+	#profile .details {
+		overflow: hidden;
+	}
+
+	#profile label {
+		color: #777;
+		display: block;
+		font-size: 14px;
+		font-weight: bold;
+		margin-top: 10px;
+		overflow: hidden;
+	}
+	
+	#profile label:first-of-type {
+		margin-top: 0;
+	}
+	
+	#profile .long_word {
+		word-break: break-all;
+	}
+	
+	#profile .none_given {
+		color: #AAA;
+		font-size: 16px;
+		font-style: oblique;
+	}
+
+.sidebar a {
+	display: inline;
+}
+
+.sidebar p {
+	margin-bottom: 10px;
+}
+
+
+/* When the sidebars drop */
+@media screen and (max-width: 1250px) {
+	#profile {
+		float: none;
+		margin: 0 auto;
+		width: 750px;
+	}
+}
+
+/* When the nav shrinks a bit */
+@media screen and (max-width: 1050px) {
+	#profile {
+		width: 650px;
+	}
+}
+		
+/* Start tablet view */
+@media screen and (max-width: 850px) {
+	#profile {
+		float: none;
+		width: 100%;
+	}
+	
+	#profile img {
+		width: 182px;
+	}
+}
+
+/* Start mobile view */
+@media screen and (max-width: 565px) {
+	#profile {
+		border-left: none;
+		border-right: none;
+	}
+	
+	#profile img {
+		display: inline-block;
+		float: none;
+		margin: 0 20px 20px 20px;
+	}
+	
+	#profile .details {
+		margin: 0 20px 0 20px;
+	}
+}

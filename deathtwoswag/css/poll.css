@@ -1,0 +1,175 @@
+/***
+	Table of Contents
+	=================
+	)) Post
+	)) Vote
+	)) Results
+	)) Comments
+	)) Media Queries
+***/
+
+
+
+#poll {
+	float: left;
+	margin-top: 20px;
+	width: 650px;
+}
+
+	#poll > article {
+		background-color: #333;
+		border: 1px solid #666;
+		padding: 10px;
+	}
+
+	#poll > article .signature {
+		color: #777;
+		margin: 5px 0 0px 2px;
+		font-size: 12px;
+	}
+
+	#poll > article p {
+		padding-top: 10px;
+	}
+
+#vote {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+	#vote h2 {
+		margin-top: 10px;
+	}
+
+	#vote input {
+		float: left;
+	}
+	
+		#vote input:last-of-type {
+			float: none;
+			margin-top: 5px;
+		}
+	
+	#vote label {
+		display: block;
+		font-size: 16px;
+		margin: 4px 0 7px 20px;
+	}
+
+		#vote label:last-of-type {
+			margin-bottom: 5px;
+		}
+
+#results {
+	margin-top: 10px;
+}
+
+	#results h2 {
+		margin-top: 20px;
+	}
+
+	#results table {
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+	
+	#results td {
+		padding-top: 5px;
+	}
+	
+	#results td:first-of-type {
+		padding-right: 10px;
+	}
+	
+	#results input {
+		margin-top: 5px;
+	}
+	
+#comments {
+	margin-top: 20px;
+}
+
+.comment {
+	border: 1px solid #666;
+	background-color: #333;
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+	.comment img {
+		border: 1px solid #666;
+		float: left;
+		height: auto;
+		margin-right: 10px;
+		width: 122px;
+	}
+	
+	.comment address {
+		display: block;
+		font-size: 16px;
+		overflow: hidden;
+	}
+	
+	.comment .signature {
+		color: #777;
+		font-size: 12px;
+		overflow: hidden;
+	}
+	
+	.comment p {
+		overflow: hidden;
+		padding-top: 10px;
+	}
+
+/* When the sidebars drop */
+@media screen and (max-width: 1250px) {
+	#poll {
+		float: none;
+		margin: 0 auto;
+		width: 750px;
+	}
+}
+		
+/* When the nav shrinks a bit */
+@media screen and (max-width: 1050px) {
+	#poll {
+		width: 650px;
+	}
+}
+
+/* Start tablet view */
+@media screen and (max-width: 850px) {
+	#poll {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* Start mobile view */
+@media screen and (max-width: 565px) {
+	#vote label {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	
+	#results table {
+		font-size: 12px;
+	}
+
+	#comments > h1 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#poll > article,
+	.comment {
+		border-left: none;
+		border-right: none;
+	}
+	
+	.comment img {
+		width: 62px;
+	}
+}
+

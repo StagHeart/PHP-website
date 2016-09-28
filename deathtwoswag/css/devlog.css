@@ -1,0 +1,142 @@
+/***
+	Table of Contents
+	=================
+	)) Post
+	)) Comments
+	)) Media Queries
+***/
+
+
+
+#post {
+	float: left;
+	margin-top: 20px;
+	width: 650px;
+}
+
+	#post > article {
+		background-color: #333;
+		border: 1px solid #666;
+		padding: 10px;
+	}
+	
+		#post > article h1 {
+			overflow: hidden;
+		}
+		
+		#post > article #delete_log {
+			float: right;
+		}
+
+		#post > article .signature {
+			color: #777;
+			margin: 5px 0 10px 2px;
+			font-size: 12px;
+		}
+
+		#post > article p {
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+	
+		#post > article h2 {
+			padding-bottom: 5px;
+			padding-top: 10px;
+		}
+		
+		#post > article ul {
+			margin-left: 20px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+		
+		#post > article li {
+			color: #EEE;
+			font-size: 14px;
+			line-height: 24px;
+		}
+	
+#comments {
+	margin-top: 20px;
+}
+
+.comment {
+	border: 1px solid #666;
+	background-color: #333;
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+	.comment img {
+		border: 1px solid #666;
+		float: left;
+		height: auto;
+		margin-right: 10px;
+		width: 122px;
+	}
+	
+	.comment address {
+		display: block;
+		font-size: 16px;
+		overflow: hidden;
+	}
+	
+	.comment .signature {
+		color: #777;
+		font-size: 12px;
+		overflow: hidden;
+	}
+	
+	.comment p {
+		overflow: hidden;
+		padding-top: 10px;
+	}
+
+/* When the sidebars drop */
+@media screen and (max-width: 1250px) {
+	#post {
+		float: none;
+		margin: 0 auto;
+		width: 750px;
+	}
+}
+		
+/* When the nav shrinks a bit */
+@media screen and (max-width: 1050px) {
+	#post {
+		width: 650px;
+	}
+}
+
+/* Start tablet view */
+@media screen and (max-width: 850px) {
+	#post {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* Start mobile view */
+@media screen and (max-width: 565px) {
+	#post > article li {
+		font-size: 12px;
+		line-height: 22px;
+	}
+	
+	#comments > h1 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#post > article,
+	.comment {
+		border-left: none;
+		border-right: none;
+	}
+	
+	.comment img {
+		width: 62px;
+	}
+}
+

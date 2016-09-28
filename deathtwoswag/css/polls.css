@@ -1,0 +1,124 @@
+/***
+	Table of Contents
+	=================
+	)) Polls
+	)) Article (Poll)
+	)) Sidebar
+	)) Media Queries
+***/
+
+
+
+#polls {
+	float: left;
+	overflow: hidden;
+	width: 650px;
+}
+
+	#polls > h1 {
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+	
+	#polls > #create_poll {
+		float: right;
+	}
+
+article {
+	background-color: #333;
+	border: 1px solid #666;
+	clear: both;
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+	article:last-of-type {
+		margin-bottom: 20px;
+	}
+
+	article h2 {
+		margin-bottom: 10px;
+	}
+
+	article .signature {
+		color: #777;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+	
+#goto_older {
+	float: left;
+}
+
+#goto_newer {
+	float: right;
+}
+
+.sidebar h2 {
+	margin: 5px 0;
+	font-size: 16px;
+}
+
+.sidebar input {
+	float: left;
+	margin: 0 5px;
+}
+
+.sidebar label {
+	color: #777;
+	display: block;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+/* When the sidebars drop */
+@media screen and (max-width: 1250px) {
+	#polls {
+		float: none;
+		margin: 0 auto;
+		width: 750px;
+	}
+}
+
+/* When the nav shrinks a bit */
+@media screen and (max-width: 1050px) {
+	#polls {
+		width: 650px;
+	}
+}
+		
+/* Start tablet view */
+@media screen and (max-width: 850px) {
+	#polls {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* Start mobile view */
+@media screen and (max-width: 565px) {
+	#polls > h1 {
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 24px;
+	}
+	
+	#polls > #create_poll {
+		margin-right: 10px;
+	}
+
+	article {
+		border-left: none;
+		border-right: none;
+	}
+	
+	#goto_older {
+		margin-left: 10px;
+	}
+	
+	#goto_newer {
+		margin-right: 10px;
+	}
+}
+

@@ -1,0 +1,49 @@
+/***
+	Table of Contents
+	=================
+	)) Inner Centering
+	)) Labels/Inputs
+	)) Media Queries
+***/
+
+
+
+main {
+	text-align: center;
+}
+
+	main .inner {
+		display: inline-block;
+		margin-top: 15px;
+		text-align: left;
+		width: 250px;
+	}
+
+		main .inner h1 {
+			margin-bottom: 5px;
+		}
+
+		main .inner label {
+			color: #777;
+			display: block;
+			margin-top: 5px;
+		}
+
+		main .inner input {
+			margin-bottom: 5px;
+			padding: 2px;
+			width: 100%;
+		}
+
+		main .inner input:last-of-type {
+			margin-top: 10px;
+			padding: 0 5px;
+			width: auto;
+		}
+		
+/* Start tablet view */
+@media screen and (max-width: 850px) {
+	main {
+		width: 100%;
+	}
+}

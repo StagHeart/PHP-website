@@ -1,0 +1,85 @@
+/***
+	Table of Contents
+	=================
+	)) Article
+	)) Section
+	)) Media Queries
+***/
+
+
+
+article {
+	float: left;
+	width: 650px;
+}
+	
+section {
+	background-color: #333;
+	border: 1px solid #666;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+	section h2 {
+		margin-bottom: 10px;
+	}
+
+	section p {
+		padding: 5px 0;
+	}
+
+	section ul {
+		list-style-type: circle;
+		padding: 10px 0 10px 20px;
+	}
+
+	section li {
+		padding-left: 10px;
+	}
+
+	section small {
+		color: #777;
+	}
+	
+/* When the sidebars drop */
+@media screen and (max-width: 1250px) {
+	article {
+		float: none;
+		margin: 0 auto;
+		width: 750px;
+	}
+}
+
+/* When the nav shrinks a bit */
+@media screen and (max-width: 1050px) {
+	article {
+		width: 650px;
+	}
+}
+
+/* Start tablet view */
+@media screen and (max-width: 850px) {
+	article {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* Start mobile view */
+@media screen and (max-width: 565px) {
+	article > h1 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	section {
+		border-left: none;
+		border-right: none;
+	}
+	
+		section li {
+			font-size: 12px;
+			line-height: 18px;
+		}
+}
+

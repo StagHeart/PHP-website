@@ -1,0 +1,152 @@
+/***
+	Table of Contents
+	=================
+	)) Above Fold
+	)) Features
+	)) Media Queries
+***/
+
+#above_fold {
+	background-color: #333;
+	border: 1px solid #666;
+	border-collapse: separate;
+	border-spacing: 10px;
+	display: table;
+	margin-bottom: 30px;
+}
+
+	#above_fold .wrapper {
+		display: table-cell;
+		position: relative;
+		vertical-align: top;
+		width: 100%;
+	}
+
+	#above_fold video {
+		height: auto;
+		width: 100%;
+	}
+
+	#above_fold p {
+		color: #FFF;
+		display: table-cell;
+		float: left;
+		font-size: 16px;
+		line-height: 24px;
+		width: 280px;
+	}
+
+	#above_fold p::first-letter {
+		float: left;
+		font-size: 32px;
+	}
+
+	#above_fold .accent_button {
+		margin: 15px auto 5px auto;
+		width: 150px;
+	}
+
+#features > h1 {
+	margin-bottom: 10px;
+}
+
+.feature {
+	background-color: #333;
+	border: 1px solid #666;
+	border-top: 1px solid #666;
+	padding: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+	.feature:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.feature img {
+		border: 1px solid #666;
+		float: left;
+		height: auto;
+		margin-right: 10px;
+		width: 402px;
+	}
+	
+	.feature h1 {
+		font-size: 24px;
+		overflow: hidden;
+	}
+	
+	.feature ul {
+		overflow: hidden;
+		padding-left: 20px;
+	}
+	
+	.feature li {
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+/* Start tablet view */
+@media screen and (max-width: 850px) {
+	#above_fold {
+		background-color: initial;
+		border: none;
+		display: block;
+		width: 100%;
+	}
+
+	#above_fold .wrapper {
+		border: 1px solid #666;
+		display: block;
+	}
+	
+	#above_fold p {
+		background-color: #333;
+		border: 1px solid #666;
+		display: block;
+		float: none;
+		margin-top: 10px;
+		padding: 15px;
+		width: 100%;
+	}
+	
+	.feature img {
+		width: 202px;
+	}
+}
+
+/* Start mobile view */
+@media screen and (max-width: 565px) {
+	#above_fold .wrapper,
+	#above_fold p,
+	.feature {
+		border-left: none;
+		border-right: none;
+	}
+	
+	#above_fold p {
+		font-size: 14px;
+	}
+	
+	#features > h1 {
+		margin-left: 10px;
+	}
+	
+	.feature li {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.feature h1 {
+		margin-top: 5px;
+	}
+
+	.feature img {
+		display: block;
+		float: none;
+		height: auto;
+		width: 100%;
+	}
+}
+

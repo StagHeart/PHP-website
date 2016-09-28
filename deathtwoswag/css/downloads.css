@@ -1,0 +1,119 @@
+/***
+	Table of Contents
+	=================
+	)) Downloads
+	)) Platform
+	)) Media Queries
+***/
+
+#downloads {
+	float: left;
+	width: 650px;
+}
+
+#downloads > h1 {
+	margin-bottom: 20px;
+}
+
+.platform {
+	background-color: #333;
+	border: 1px solid #666;
+	overflow: hidden;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+	.platform:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.platform h2 {
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	.platform img {
+		float: left;
+		height: auto;
+		margin-right: 20px;
+		width: 280px;
+	}
+
+	.platform .links {
+		overflow: hidden;
+	}
+	
+		.platform .links .name {
+			color: #333;
+			font-size: 16px;
+		}
+		
+			.platform .links a:hover .name {
+				color: inherit;
+			}
+		
+		.platform .links .sub {
+			color: #777;
+			font-size: 12px;
+			text-transform: initial;
+		}
+
+	.platform a {
+		margin-top: 10px;
+	}
+
+/* When the sidebars drop */
+@media screen and (max-width: 1250px) {
+	#downloads {
+		float: none;
+		margin: 0 auto;
+		width: 750px;
+	}
+}
+
+/* When the nav shrinks a bit */
+@media screen and (max-width: 1050px) {
+	#downloads {
+		width: 650px;
+	}
+}
+
+/* Start tablet view */
+@media screen and (max-width: 850px) {
+	#downloads {
+		width: 100%;
+	}
+
+	.platform img {
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+	.platform .accent_button {
+		margin-left: auto;
+		margin-right: auto;
+		width: 350px;
+	}	
+}
+
+/* Start mobile view */
+@media screen and (max-width: 565px) {
+	#downloads > h1 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.platform {
+		border-left: 0;
+		border-right: 0;
+	}
+
+	.platform .accent_button {
+		font-size: 14px;
+		width: 80%;
+	}
+}
+
